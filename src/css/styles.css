@@ -18,3 +18,25 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+
+}
+.photo-card{
+  
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: inset 3px 0 5px -3px rgba(150,79,23,0.32),inset 0 3px 5px -3px rgba(150,79,23,0.32);
+transition: .7s;
+
+}
+
+.hidden {
+  display: none;
+}

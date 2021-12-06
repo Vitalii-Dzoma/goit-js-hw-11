@@ -32,7 +32,7 @@ body {
   
   margin-right: 10px;
   margin-bottom: 10px;
-  box-shadow: inset 3px 0 5px -3px rgba(150,79,23,0.32),inset 0 3px 5px -3px rgba(150,79,23,0.32);
+  box-shadow: inset 4px -6px 6px -6px rgb(150 79 23 / 60%), inset -6px -6px 5px -6px rgb(150 79 23 / 32%);
 transition: .7s;
 
 }

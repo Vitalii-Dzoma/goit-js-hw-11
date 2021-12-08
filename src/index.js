@@ -85,8 +85,9 @@ async function clickLoadMore() {
     
     renderedMarkup.forEach((element, index) => {
         if (index > image.totalHits) {
-       Notify.info("We're sorry, but you've reached the end of search results.")
+      
             count = 1;
+             Notify.info("We're sorry, but you've reached the end of search results.")
             btnLoadMore.classList.add('hidden')
         }
 gallery.on('show.simplelightbox', simpleLightbox);

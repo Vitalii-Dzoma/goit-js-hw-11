@@ -82,17 +82,17 @@ async function clickLoadMore() {
   behavior: "smooth",
 });
     const renderedMarkup = document.querySelectorAll('.photo-card');
-    
-    renderedMarkup.forEach((element, index) => {
-        if (index > image.totalHits) {
-      
+   
+
+        if (renderedMarkup.length >= image.totalHits) {
+       console.log(renderedMarkup.length)
             count = 1;
              Notify.info("We're sorry, but you've reached the end of search results.")
             btnLoadMore.classList.add('hidden')
         }
 gallery.on('show.simplelightbox', simpleLightbox);
 gallery.refresh()
-})
+
 }
 
   

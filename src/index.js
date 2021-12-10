@@ -19,7 +19,7 @@ async function onSearch(e) {
     e.preventDefault()
 
 const image = await API.fetchImages(inputData.value)
-    console.log(image);
+    count=1
     if (image.hits.length === 0) {
         Notify.info("Sorry, there are no images matching your search query. Please try again.")
     }
@@ -52,8 +52,10 @@ gallery.on('show.simplelightbox', simpleLightbox);
 
 
 async function clickLoadMore() {
+
     count+=1
-    const image = await API.fetchImages(inputData.value, count)
+  const image = await API.fetchImages(inputData.value, count)
+  
    const markup = await image.hits.map(({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) =>
                   `<div class="photo-card">
   <a class="gallery__item" href="${largeImageURL}"><img src=${webformatURL} alt="" loading="lazy" width=300px height=150px/></a>
